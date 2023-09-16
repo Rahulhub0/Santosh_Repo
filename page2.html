@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="contact" name="myForm" onsubmit="return" action="./ast.php">
+        <div class="title">
+            <h2>Fill your details</h2>
+        </div>
+        <div class="form" id="fname">
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" name="name">
+            <b><p class="errorm"></p></b>
+        </div>
+        <div class="form" id="femail">
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email">
+            <b><p class="errorm"></p></b>
+        </div>
+        <div class="form" id="fphone">
+            <label for="phone">Phone No.: </label>
+            <input type="text" id="phone" name="phone">
+            <b><p class="errorm"></p></b>
+        </div>
+        <div class="form" id="fcity"> 
+            <label for="city">City: </label>
+            <input type="text" id="city" name="city">
+            <b><p class="errorm"></p></b>
+        </div>
+        <div class="form" id="fchecki">
+            <label for="checki">Check-in: </label>
+            <input type="date" id="checki" name="checki">
+            <b><p class="errorm"></p></b>
+        </div>
+        <div class="form" id="fchecko">
+            <label for="checko">Check-out: </label>
+            <input type="date" id="checko" name="checko">
+            <b><p class="errorm"></p></b>
+        </div>
+        <button type="submit" class="btn">Book</button>
+    </form>
+    
+
+    <script>
+        function clearerror(){
+            document.querySelectorAll(".errorm").innerHTML="";
+        }
+    </script>
+</body>
+</html>
